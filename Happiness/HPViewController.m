@@ -7,8 +7,10 @@
 //
 
 #import "HPViewController.h"
+#import "HPFaceView.h"
 
 @interface HPViewController ()
+@property (nonatomic,weak) HPFaceView *faceView;
 
 @end
 
@@ -17,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.faceView setNeedsDisplay];
 }
 
 - (void)didReceiveMemoryWarning

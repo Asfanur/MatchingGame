@@ -21,6 +21,7 @@
 		808AE90318D305D500BF828D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AE8E518D305D200BF828D /* UIKit.framework */; };
 		808AE90B18D305D600BF828D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808AE90918D305D600BF828D /* InfoPlist.strings */; };
 		808AE90D18D305D600BF828D /* HappinessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AE90C18D305D600BF828D /* HappinessTests.m */; };
+		808AE91B18D30B3400BF828D /* HPFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AE91A18D30B3400BF828D /* HPFaceView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		808AE90818D305D600BF828D /* HappinessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HappinessTests-Info.plist"; sourceTree = "<group>"; };
 		808AE90A18D305D600BF828D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		808AE90C18D305D600BF828D /* HappinessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappinessTests.m; sourceTree = "<group>"; };
+		808AE91918D30B3400BF828D /* HPFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPFaceView.h; sourceTree = "<group>"; };
+		808AE91A18D30B3400BF828D /* HPFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPFaceView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 			children = (
 				808AE8F018D305D400BF828D /* HPAppDelegate.h */,
 				808AE8F118D305D400BF828D /* HPAppDelegate.m */,
+				808AE91918D30B3400BF828D /* HPFaceView.h */,
+				808AE91A18D30B3400BF828D /* HPFaceView.m */,
 				808AE8F318D305D500BF828D /* Main.storyboard */,
 				808AE8F618D305D500BF828D /* HPViewController.h */,
 				808AE8F718D305D500BF828D /* HPViewController.m */,
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				808AE8F818D305D500BF828D /* HPViewController.m in Sources */,
+				808AE91B18D30B3400BF828D /* HPFaceView.m in Sources */,
 				808AE8F218D305D400BF828D /* HPAppDelegate.m in Sources */,
 				808AE8EE18D305D300BF828D /* main.m in Sources */,
 			);
