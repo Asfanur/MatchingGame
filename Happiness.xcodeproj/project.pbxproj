@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		807C01A318D572970077DE7C /* HPSquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 807C01A218D572970077DE7C /* HPSquareView.m */; };
+		807C01A718D58EEE0077DE7C /* HPAbstractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 807C01A618D58EED0077DE7C /* HPAbstractScene.m */; };
 		808AE8E218D305D200BF828D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AE8E118D305D200BF828D /* Foundation.framework */; };
 		808AE8E418D305D200BF828D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AE8E318D305D200BF828D /* CoreGraphics.framework */; };
 		808AE8E618D305D200BF828D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808AE8E518D305D200BF828D /* UIKit.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		807C01A118D572970077DE7C /* HPSquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPSquareView.h; sourceTree = "<group>"; };
+		807C01A218D572970077DE7C /* HPSquareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPSquareView.m; sourceTree = "<group>"; };
+		807C01A518D58EED0077DE7C /* HPAbstractScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPAbstractScene.h; sourceTree = "<group>"; };
+		807C01A618D58EED0077DE7C /* HPAbstractScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPAbstractScene.m; sourceTree = "<group>"; };
 		808AE8DE18D305D100BF828D /* Happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808AE8E118D305D200BF828D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		808AE8E318D305D200BF828D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		807C01A418D58E410077DE7C /* Abstract classes */ = {
+			isa = PBXGroup;
+			children = (
+				807C01A518D58EED0077DE7C /* HPAbstractScene.h */,
+				807C01A618D58EED0077DE7C /* HPAbstractScene.m */,
+			);
+			name = "Abstract classes";
+			sourceTree = "<group>";
+		};
 		808AE8D518D305D100BF828D = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +130,13 @@
 		808AE8E718D305D300BF828D /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
+				807C01A418D58E410077DE7C /* Abstract classes */,
 				808AE8F018D305D400BF828D /* HPAppDelegate.h */,
 				808AE8F118D305D400BF828D /* HPAppDelegate.m */,
 				808AE91918D30B3400BF828D /* HPFaceView.h */,
 				808AE91A18D30B3400BF828D /* HPFaceView.m */,
+				807C01A118D572970077DE7C /* HPSquareView.h */,
+				807C01A218D572970077DE7C /* HPSquareView.m */,
 				808AE8F318D305D500BF828D /* Main.storyboard */,
 				808AE8F618D305D500BF828D /* HPViewController.h */,
 				808AE8F718D305D500BF828D /* HPViewController.m */,
@@ -257,7 +275,9 @@
 			files = (
 				808AE8F818D305D500BF828D /* HPViewController.m in Sources */,
 				808AE91B18D30B3400BF828D /* HPFaceView.m in Sources */,
+				807C01A718D58EEE0077DE7C /* HPAbstractScene.m in Sources */,
 				808AE8F218D305D400BF828D /* HPAppDelegate.m in Sources */,
+				807C01A318D572970077DE7C /* HPSquareView.m in Sources */,
 				808AE8EE18D305D300BF828D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +483,7 @@
 				808AE91218D305D600BF828D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		808AE91318D305D600BF828D /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +492,7 @@
 				808AE91518D305D600BF828D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="BeX-VX-Eq8"/>
                         <viewControllerLayoutGuide type="bottom" id="qMD-qm-FMR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ndJ-7q-Egn" customClass="HPFaceView">
+                    <view key="view" contentMode="scaleToFill" id="ndJ-7q-Egn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

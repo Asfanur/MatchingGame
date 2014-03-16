@@ -1,8 +1,5 @@
-//
-//  HPViewController.h
-//  Happiness
-//
-//  Created by Md.Asfanur Arafin on 14/03/2014.
+// HPSquareView.m
+// 
 // Copyright (c) 2014 Md.Asfanur Arafin
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -11,10 +8,10 @@
 // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 // copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
-//
+// 
 // The above copyright notice and this permission notice shall be included in
 // all copies or substantial portions of the Software.
-//
+// 
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -23,8 +20,46 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import "HPSquareView.h"
 
-@interface HPViewController : UIViewController
+@implementation HPSquareView
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        [self setup];
+        
+    }
+    return self;
+}
+
+-(void)setup {
+    self.contentMode = UIViewContentModeRedraw;
+}
+
+-(void)awakeFromNib {
+    [self setup];
+}
+
+
+- (void)drawRect:(CGRect)rect
+{
+    [super drawRect:rect];
+
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
+    CGFloat width = 200;
+    CGFloat height = 80;
+    CGFloat x = (self.frame.size.width - width) * 0.5f;
+    CGFloat y = (self.frame.size.height - height) * 0.5f;
+    CGRect rectangle = CGRectMake(x, y, width, height);
+    CGContextAddRect(context, rectangle);
+    CGContextStrokePath(context);
+}
+
+
 
 @end
